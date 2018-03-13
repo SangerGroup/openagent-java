@@ -7,7 +7,7 @@ Check the wiki tab for instructions on getting OpenAgent up and running.
 ## Running
 First of all, make sure you have Java installed; it doesn't matter whether it's the JRE or the JDK.
 
-Download the repo. Open the "jars" folder, then the "test" folder. Double-click on the jbuddy.jar file. If that doesn't work, follow these steps for your operating system and file manager below:
+Download the repo. Open the repo folder, then the "jars" folder, then the "test" folder. Double-click on the jbuddy.jar file. If that doesn't work, follow these steps for your operating system and file manager below:
 ### Windows & Windows Explorer
 Hold down <kbd>Shift</kbd>, and right-click. Click "Open command window here" or "Open PowerShell window here", whichever comes up. When it comes up, type `java -jar jbuddy.jar`.
 
