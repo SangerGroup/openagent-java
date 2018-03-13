@@ -2,9 +2,11 @@
 An open-source, cross-platform replacement for Microsoft Agent written in Java.
 
 ## Installation
-Instructions will be available soon.
+Check the wiki tab for instructions on getting OpenAgent up and running.
 
 ## Credits
+Of course, thanks to Microsoft for coming up with Microsoft Agent and making the Peedy character, which is used in OpenAgent.
+
 Thanks to Dorkbox for making his awesome System Tray (https://github.com/dorkbox/systemtray), which I used for the system tray icon.
 
 Thanks to Tetyys for making the Online Microsoft Sam TTS generator (https://tetyys.com/SAPI4/), which I used for the SAPI4 voice.
