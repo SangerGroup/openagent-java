@@ -15,3 +15,5 @@ Thanks to Pierre David Belanger for making the Chatter Bot API (https://github.c
 Thanks to this website (https://www.care.com/c/stories/3776/101-funny-jokes-for-kids/) for making the jokes I used in JBuddy.
 
 Thanks to Carnegie Mellon University for making the voice for MaryTTS, and for making Sphinx4 (https://cmusphinx.github.io/).
+
+Thanks to my brother for making the animations for the Peedy character.
