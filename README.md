@@ -2,11 +2,12 @@
 An open-source, cross-platform replacement for Microsoft Agent written in Java.
 
 ## Installation
+Instructions will be available soon.
 
 ## Credits
 Thanks to Dorkbox for making his awesome System Tray (https://github.com/dorkbox/systemtray), which I used for the system tray icon.
 
-Thanks to Tetyys for making the Online Microsoft Speech API generator (https://tetyys.com/SAPI4/), which I used for the SAPI4 voice.
+Thanks to Tetyys for making the Online Microsoft Sam TTS generator (https://tetyys.com/SAPI4/), which I used for the SAPI4 voice.
 
 Thanks to the creators of MaryTTS for making it (https://github.com/marytts/marytts), which I used as the main TTS engine.
 
