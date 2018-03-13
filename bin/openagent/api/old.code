@@ -1,0 +1,99 @@
+/*
+		 * Old code
+		try {
+			BufferedImage img = convertToBufferedImage(
+					new ImageIcon(new URL("file:///" + path)).getImage());
+			ImageIO.write(img, "png",
+					new File(Paths.get(".").toAbsolutePath().normalize().toString()
+							+ File.separator + "img.png"));
+			character.setImage(img);
+			internalFrame.setSize(img.getWidth(), img.getHeight());
+			character.revalidate();
+			character.repaint();
+			Timer timer = new Timer(200, (e) -> {
+				System.out.println("repainting...");
+				SwingUtilities.invokeLater(() -> {
+					character.revalidate();
+					character.repaint();
+					internalFrame.revalidate();
+					internalFrame.repaint();
+				});
+			});
+			timer.start();
+		} catch (IOException e) {
+			e.printStackTrace();
+			throw new UncheckedAgentException("Unsupported animation");
+		}*/
+		
+		/*private static class Bubble extends JComponent {
+	
+		
+		
+		private JLabel speechLabel = new JLabel();
+	
+		public Bubble() {
+			speechLabel.setFont(new Font(Font.SANS_SERIF, Font.PLAIN, 20));
+			speechLabel.setForeground(Color.BLACK);
+			this.add(speechLabel);
+		}
+		
+		public void setBubbleText(String t) {
+			speechLabel.setText(t);
+		}
+		
+		public JLabel getLabel() { return speechLabel; }
+		
+		@Override
+		protected void paintComponent(Graphics g) {
+			g.setColor(Color.white);
+			g.drawRect(
+					30, 30,
+					200, 200
+				);
+		}
+		
+	}*/
+	
+	/*private JComponent character = new JComponent() {
+		
+		public CharacterState currentState = CharacterState.IDLE;
+		
+		@Override
+		protected void paintComponent(Graphics g) {
+			g.drawImage(
+					idleImage,
+					this.getWidth()/2-idleImage.getWidth(null)/2,
+					this.getHeight()/2-idleImage.getHeight(null)/2,
+					idleImage.getWidth(null),
+					idleImage.getHeight(null),
+					null);
+		}
+		
+	};*/
+	
+	//private static Bubble bubble = new Bubble();
+	
+	private enum CharacterState {
+		IDLE
+	}
+		
+public static BufferedImage convertToBufferedImage(Image image)
+	{
+	    BufferedImage newImage = new BufferedImage(
+	        image.getWidth(null), image.getHeight(null),
+	        BufferedImage.TYPE_INT_ARGB);
+	    Graphics2D g = newImage.createGraphics();
+	    g.drawImage(image, 0, 0, null);
+	    g.dispose();
+	    return newImage;
+	}
+	
+		
+	private Thread transparencyThread = new Thread(null, () -> {
+		while(true) {
+			character.updateBackground();
+	        try {
+				Thread.sleep(250);
+			} catch (InterruptedException e) { e.printStackTrace(); }
+		}
+	}, "transparency");
