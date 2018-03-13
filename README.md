@@ -4,6 +4,23 @@ An open-source, cross-platform replacement for Microsoft Agent written in Java.
 ## Installation
 Check the wiki tab for instructions on getting OpenAgent up and running.
 
+## Running
+First of all, make sure you have Java installed; it doesn't matter whether it's the JRE or the JDK.
+
+Download the repo. Open the "jars" folder, then the "test" folder. Double-click on the jbuddy.jar file. If that doesn't work, follow these steps for your operating system and file manager below:
+### Windows & Windows Explorer
+Hold down <kbd>Shift</kbd>, and right-click. Click "Open command window here" or "Open PowerShell window here", whichever comes up. When it comes up, type `java -jar jbuddy.jar`.
+
+### Linux
+#### Nautilus / Thunar
+Right-click in the folder, and click "Open terminal here". Type `java -jar jbuddy.jar`.
+
+#### Dolphin
+Press <kbd>F4</kbd> in the folder, and type `java -jar jbuddy.jar`.
+
+#### No file manager / other file manager
+Open a terminal emulator, and `cd` to the above folder. Type `java -jar jbuddy.jar`.
+
 ## Credits
 Of course, thanks to Microsoft for coming up with Microsoft Agent and making the Peedy character, which is used in OpenAgent.
 
