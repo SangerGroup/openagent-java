@@ -4,7 +4,7 @@ An open-source, cross-platform replacement for Microsoft Agent written in Java.
 ## Installation
 Check the wiki tab for instructions on getting OpenAgent up and running.
 
-## Running
+## Running JBuddy: a BonziBUDDY-like example program written using OpenAgent 
 First of all, make sure you have Java installed; it doesn't matter whether it's the JRE or the JDK.
 
 Download the repo. Open the repo folder, then the "jars" folder, then the "test" folder. Double-click on the jbuddy.jar file. If that doesn't work, follow these steps for your operating system and file manager below:
